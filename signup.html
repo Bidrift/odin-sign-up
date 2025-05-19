@@ -5,50 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
         <section class="left-section">
-            <img src="images/side.avif" alt="Background image">
+            <img class="left-section-img" src="images/side.avif" alt="Background image">
             <div class="logo-holder">
-                <img src="images/odin-logo.png" alt="Odin logo">
+                <img class="odin-logo" src="images/odin-logo.png" alt="Odin logo">
                 <h1>ODIN</h1>
             </div>
-            <p class="credits">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
+            <p class="image-credits">Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" target="_blank">Unsplash</a></p>
         </section>
-        <section class="right-section">
-            <div class="description-container">
+        <section class="right-section grey-background">
+            <div class="description-container sign-up-content-container">
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
                 <p>Sign up <em>now</em> to get started.</p>
                 <br>
-                <p>You <em>know</em> you want to</p>
+                <p>You <em>know</em> you want to.</p>
             </div>
-            <div class="sign-up-form-container">
+            <div class="sign-up-form-container white-background sign-up-content-container">
                 <h2>Let's do this!</h2>
                 <form class="sign-up-form" id="sign-up-form" action="/" method="post">
-                    <label for="fname">First name</label>
-                    <input type="text" name="fname" id="fname" required placeholder="John">
-
-                    <label for="lname">Last name</label>
-                    <input type="text" name="lname" id="lname" required placeholder="Doe">
-
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required placeholder="j.doe@example.com">
-
-                    <label for="phone">Phone number</label>
-                    <input type="tel" name="phone" id="phone" required placeholder="+123456789" pattern="\+[0-9]+">
-
-                    <label for="pwd">Password</label>
-                    <input type="password" name="pwd" id="pwd" required minlength="8">
-
-                    <label for="pwd-c">Confirm password</label>
-                    <input type="password" name="pwd-c" id="pwd-c" required minlength="8">
+                    <ul class="sign-up-form-list">
+                        <li class="sign-up-form-element">
+                            <label for="fname">First name <span aria-label="reauired">*</span></label>
+                            <input type="text" name="fname" id="fname" required placeholder="John">
+                        </li>
+                        <li class="sign-up-form-element">
+                            <label for="lname">Last name <span aria-label="reauired">*</span></label>
+                            <input type="text" name="lname" id="lname" required placeholder="Doe">
+                        </li>
+                        <li class="sign-up-form-element">
+                            <label for="email">Email <span aria-label="reauired">*</span></label>
+                            <input type="email" name="email" id="email" required placeholder="j.doe@example.com">
+                        </li>
+                        <li class="sign-up-form-element">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" name="phone" id="phone" placeholder="+123456789" pattern="\+[0-9]+">
+                        </li>
+                        <li class="sign-up-form-element">
+                            <label for="pwd">Password <span aria-label="reauired">*</span></label>
+                            <input type="password" name="pwd" id="pwd" required minlength="8" placeholder="Your password">
+                        </li>
+                        <li class="sign-up-form-element">
+                            <label for="pwd-c">Confirm password <span aria-label="reauired">*</span></label>
+                            <input type="password" name="pwd-c" id="pwd-c" required minlength="8" placeholder="Repeat your password" >
+                        </li>
+                    </ul>
                 </form>
+                <p>* - required</p>
             </div>
-            <div class="button-container">
-                <button class="sign-up-button" type="submit" form="sign-up-form">Create Account</button>
+            <div class="button-container sign-up-content-container">
+                <button class="sign-up-button primary-button" type="submit" form="sign-up-form">Create Account</button>
                 <p>Already have an account? <a href="login.html">Log in</a></p>
             </div>
+            
         </section>
     </main>
 </body>

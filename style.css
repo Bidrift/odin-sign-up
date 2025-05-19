@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "Odin Font";
+    src: url(fonts/Norse-Bold.otf);
+}
+
+:root {
+    /* Colors for elements */
+    --primary-color: #596D48;
+    --input-default: #E5E7EB;
+    --input-invalid: rgb(187, 0, 0);
+    --input-focus: rgb(0, 0, 175);
+    --text-color: rgb(31, 31, 31);
+
+
+    /* Background colors */
+    --white-background: #FFF;
+    --grey-background: #f3f3f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ancizar Sans", sans-serif;
+    color: var(--text-color, black);
+}
+
+.white-background {
+    background-color: var(--white-background, white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+}
+
+.grey-background {
+    background-color: var(--grey-background, #c5c5c5);
+}
+
+main {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+}
+
+.left-section {
+    position: relative;
+}
+
+.left-section-img {
+    height: 100vh;
+    border: 0;
+}
+
+.logo-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 128px 0;
+}
+
+.logo-holder h1 {
+    color: white;
+}
+
+.logo-holder .odin-logo {
+    height: 128px;
+}
+
+.logo-holder h1 {
+    font-size: 8em;
+    font-family: "Odin Font";
+}
+
+.image-credits {
+    position: absolute;
+    bottom: 24px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-weight: 100;
+}
+
+.image-credits a {
+    color: white;
+}
+
+.image-credits a:hover {
+    color:antiquewhite;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow-y: scroll;
+}
+
+.sign-up-content-container {
+    padding: 64px;
+}
+
+.sign-up-form-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px 0;
+}
+
+.sign-up-form-element {
+    flex: 0 0 400px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 64px;
+    margin-bottom: 32px;
+}
+
+.sign-up-form-element label {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.sign-up-content-container h2 {
+    font-size: 2em;
+}
+
+.description-container {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.sign-up-content-container input {
+    appearance: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: 8px;
+    border: 1px solid var(--input-default, grey);
+}
+
+.sign-up-content-container input:focus {
+    border-color: var(--input-focus);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.sign-up-content-container input:invalid {
+    border-color: var(--input-invalid);
+}
+
+.button-container button {
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 12px 64px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.primary-button {
+    background-color: var(--primary-color, forestgreen);
+    color: white;
+}
+
+.primary-button:hover {
+    color: rgb(240, 240, 240);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.button-container p {
+    font-size: 1.2em;
+}
+
+.button-container p a {
+    text-decoration: none;
+    color: var(--primary-color, forestgreen)
+}
+
+.button-container p a:hover {
+    text-decoration: underline;
+}
