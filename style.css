@@ -38,18 +38,23 @@
 
 main {
     height: 100vh;
-    overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
     align-items: stretch;
 }
 
 .left-section {
     position: relative;
+    flex: 1;
+    align-self: flex-start;
+    overflow: hidden;
 }
 
 .left-section-img {
-    height: 100vh;
     border: 0;
+    display: block;
+    max-height: 100vh;
+    position: sticky;
 }
 
 .logo-holder {
@@ -96,11 +101,11 @@ main {
 }
 
 .right-section {
+    flex: 3;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    overflow-y: scroll;
 }
 
 .sign-up-content-container {
@@ -115,7 +120,7 @@ main {
 }
 
 .sign-up-form-element {
-    flex: 0 0 400px;
+    flex: 0 1 400px;
     display: flex;
     flex-direction: column;
     margin-right: 64px;
