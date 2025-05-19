@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="left-section">
+            <img src="images/side.avif" alt="Background image">
+            <div class="logo-holder">
+                <img src="images/odin-logo.png" alt="Odin logo">
+                <h1>ODIN</h1>
+            </div>
+            <p class="credits">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
+        </section>
+        <section class="right-section">
+            <div class="description-container">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <br>
+                <p>You <em>know</em> you want to</p>
+            </div>
+            <div class="sign-up-form-container">
+                <h2>Let's do this!</h2>
+                <form class="sign-up-form" id="sign-up-form" action="/" method="post">
+                    <label for="fname">First name</label>
+                    <input type="text" name="fname" id="fname" required placeholder="John">
+
+                    <label for="lname">Last name</label>
+                    <input type="text" name="lname" id="lname" required placeholder="Doe">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="j.doe@example.com">
+
+                    <label for="phone">Phone number</label>
+                    <input type="tel" name="phone" id="phone" required placeholder="+123456789" pattern="\+[0-9]+">
+
+                    <label for="pwd">Password</label>
+                    <input type="password" name="pwd" id="pwd" required minlength="8">
+
+                    <label for="pwd-c">Confirm password</label>
+                    <input type="password" name="pwd-c" id="pwd-c" required minlength="8">
+                </form>
+            </div>
+            <div class="button-container">
+                <button class="sign-up-button" type="submit" form="sign-up-form">Create Account</button>
+                <p>Already have an account? <a href="login.html">Log in</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
